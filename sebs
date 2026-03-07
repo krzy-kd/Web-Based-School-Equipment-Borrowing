@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Equipment Borrowing System</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #eef2f7;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-weight: 500;
+}
+
+nav button {
+    background: #334155;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #475569;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button.primary {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.primary:hover {
+    background: #1d4ed8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #f1f5f9;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-available {
+    color: green;
+    font-weight: bold;
+}
+
+.status-borrowed {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h2>School Equipment Borrowing System</h2>
+    <nav>
+        <button onclick="showDashboard()">Dashboard</button>
+        <button onclick="showRequest()">Request</button>
+        <button onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- LOGIN -->
+    <div class="card" id="loginPage">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button class="primary" onclick="login()">Login</button>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="card hidden" id="dashboardPage">
+        <h1>Equipment Inventory</h1>
+
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Projector</td>
+                <td>Electronics</td>
+                <td class="status-available">Available</td>
+            </tr>
+            <tr>
+                <td>HDMI Cable</td>
+                <td>Accessory</td>
+                <td class="status-available">Available</td>
+            </tr>
+            <tr>
+                <td>Basketball</td>
+                <td>Sports</td>
+                <td class="status-borrowed">Borrowed</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- REQUEST -->
+    <div class="card hidden" id="requestPage">
+        <h1>Borrow Equipment</h1>
+
+        <label>Select Item</label>
+        <select>
+            <option>Projector</option>
+            <option>HDMI Cable</option>
+            <option>Basketball</option>
+        </select>
+
+        <label>Borrow Date</label>
+        <input type="date">
+
+        <label>Purpose</label>
+        <input type="text" placeholder="Enter purpose">
+
+        <button class="primary" onclick="submitRequest()">Submit Request</button>
+    </div>
+
+</div>
+
+<script>
+function login() {
+    document.getElementById("loginPage").classList.add("hidden");
+    document.getElementById("dashboardPage").classList.remove("hidden");
+}
+
+function showDashboard() {
+    document.getElementById("dashboardPage").classList.remove("hidden");
+    document.getElementById("requestPage").classList.add("hidden");
+}
+
+function showRequest() {
+    document.getElementById("dashboardPage").classList.add("hidden");
+    document.getElementById("requestPage").classList.remove("hidden");
+}
+
+function logout() {
+    document.getElementById("loginPage").classList.remove("hidden");
+    document.getElementById("dashboardPage").classList.add("hidden");
+    document.getElementById("requestPage").classList.add("hidden");
+}
+
+function submitRequest() {
+    alert("Request Submitted Successfully!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Borrow History</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>Inventory</h2>
+<a href="dashboard.html">Dashboard</a>
+<a href="story.html">Story</a>
+<a href="menu.html">Menu</a>
+<a href="inventory.html">Inventory</a>
+<a href="history.html">History</a>
+</div>
+
+<div class="content">
+
+<h1>Borrow History</h1>
+
+<table id="historyTable"></table>
+
+</div>
+
+<script>
+
+let history=JSON.parse(localStorage.getItem("history"))||[]
+
+let table=document.getElementById("historyTable")
+
+history.forEach(h=>{
+    let row=`<tr>
+<td>${h.item}</td>
+<td>${h.date}</td>
+<td>${h.status}</td>
+</tr>`
+
+
+
+table.innerHTML+=row
+
+})
+
+</script>
+
+</body>
+</html>

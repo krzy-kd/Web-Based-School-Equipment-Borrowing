@@ -9,7 +9,7 @@
 <body>
 
         <!--HEADER-->
-    <header>
+    <header id="header">
         <img src="Screenshot 2026-03-05 142802.png" alt="">
         <h2>Borrow Equipment Fast and Easy</h1>
     </header>
@@ -17,17 +17,17 @@
     <!--NAVIGATION-->
     <nav>
         <a href="#How-it-works">HOW IT WORKS?</a>
-        <a href="#home">HOME</a>
-        <a href="#">EQUIPMENT</a>
-        <a href="#">ABOUT</a>
-        <a href="#">ACCOUNT</a>
+        <a href="Web-Design-1.html">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="Account-design.html">ACCOUNT</a>
     </nav>
 
     <!--View Rules-->
 
-        <input type="checkbox" id="sidebar-checkbox">
+      <!-- <input type="checkbox" id="sidebar-checkbox">
     
-    <label for="sidebar-checkbox" class="toggle-btn">View Rules</label>
+    
+        <label for="sidebar-checkbox" class="toggle-btn">View Rules</label>
 
     <section class="sidebar">
     
@@ -61,11 +61,11 @@
                 "Your teacher’s professional record and your class's fun are on the line. Every ball, bat, and bib must be accounted for. If you don't comply, your teacher is the one who pays the price. Don't be the reason your class loses their gear."
             </p>
         </div>    
-    </section>   
+    </section>  -->
 
         <!-- HERO -->
 
-    <section class="hero" id="home">
+    <section class="hero" id="hero"> 
 
         <div class="hero-content">
             <h2>Sports Equipment Borrowing System</h2>
@@ -102,7 +102,7 @@
 
                     <div class="card-container">
 
-                    <div class="card" id="">
+                    <div class="card">
                     <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf">
                     <h3>Basketball</h3>
                     <button>Borrow</button>
@@ -927,9 +927,14 @@
                     </div>
                     
                 </div>    
+
+         <input type="checkbox" id="top-checkbox">
+    
+        <button  class="top-btn"> <a href="#header">^</a> </button>     
+                
         </section>
 
-        <footer id="How-it-works">
+        <div id="How-it-works">
 
         <div class="card-instructions">
 
@@ -957,7 +962,40 @@
 
         </div>
 
-    </footer>   
+    </div>   
+
+    <footer id="about" class="about">
+        
+        <h2>About the System</h2>
+        <p class="about-text">
+            This web-based system helps manage the borrowing and returning of equipment in a simple and organized way.
+        </p>
+
+        <div class="features">
+
+            <div class="card-about">
+                <h3>📦 Equipment List</h3>
+                <p>View all available equipment that can be borrowed.</p>
+            </div>
+
+            <div class="card-about">
+                <h3>📝 Borrow Requests</h3>
+                <p>Users can request and record borrowed items easily.</p>
+            </div>
+
+            <div class="card-about">
+                <h3>📊 Tracking</h3>
+                <p>Monitor equipment status and borrowing history.</p>
+            </div>
+
+            <div class="card-about">
+                <h3>🔧 Inventory Control</h3>
+                <p>Admins can manage and organize equipment records.</p>
+            </div>
+
+        </div>
+            
+    </footer>
 
 </body>
 </html>

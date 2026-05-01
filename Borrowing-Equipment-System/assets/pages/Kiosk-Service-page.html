@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Kiosk</title>
+<link rel="stylesheet" href="/assets/styles/Kiosk-Service-page.css">
+</head>
+<body>
+<div class="layout">
+
+<div class="sidebar">
+<h2>Kiosk</h2>
+<button onclick="loadCategory('Basketball')">🏀 Basketball</button>
+<button onclick="loadCategory('Swimming')">🏊 Swimming</button>
+<button onclick="loadCategory('Tennis')">🎾 Tennis</button>
+<button onclick="loadCategory('Soccer')">⚽ Soccer</button>
+<button onclick="loadCategory('Badminton')">🏸 Badminton</button>
+</div>
+
+<div class="main">
+<div class="header">
+<h1>Select Equipment</h1>
+</div>
+
+<div class="grid" id="items"></div>
+
+<div class="cart">
+<h3>Selected Items</h3>
+<ul id="cartList"></ul>
+<p>Total: <span id="total">0</span></p>
+<button onclick="borrow()">PROCEED TO BORROW</button>
+</div>
+</div>
+
+</div>
+<script src="/assets/js/Kiosk-Service.js"></script>
+</body>
+</html>

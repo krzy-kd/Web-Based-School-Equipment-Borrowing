@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - SportsEQ</title>
+<link rel="stylesheet" href="/assets/styles/admin-page.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>SportsEQ</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Equipment</li>
+            <li>Requests</li>
+            <li>Users</li>
+            <li>Reports</li>
+            <li>Logout</li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header>
+            <h1>Admin Dashboard</h1>
+        </header>
+
+        <!-- CARDS -->
+        <section class="cards">
+            <div class="card">
+                <h3>Total Equipment</h3>
+                <p>25</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Requests</h3>
+                <p>8</p>
+            </div>
+
+            <div class="card">
+                <h3>Borrowed Items</h3>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <h3>Users</h3>
+                <p>15</p>
+            </div>
+        </section>
+
+        <!-- TABLE -->
+        <section class="table-section">
+            <h2>Borrow Requests</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Equipment</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Basketball</td>
+                        <td>April 20</td>
+                        <td class="pending">Pending</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Volleyball</td>
+                        <td>April 19</td>
+                        <td class="approved">Approved</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

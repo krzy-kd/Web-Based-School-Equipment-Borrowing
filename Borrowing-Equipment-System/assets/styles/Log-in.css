@@ -4,6 +4,20 @@
     font-size: 15px;
 }
 
+body {
+    background-color: #1a1a1a;
+}
+
+.back-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #f4b400;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px 0 0 20px;
+}
+
 main {
     height: 100vh;
     background-color: #1a1a1a;

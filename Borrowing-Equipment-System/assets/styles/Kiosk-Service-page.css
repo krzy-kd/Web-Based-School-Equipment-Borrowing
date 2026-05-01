@@ -1,0 +1,118 @@
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:#1a1a1a;
+  color:#f5f5f0;
+}
+
+.layout {
+  display:flex;
+}
+
+.sidebar {
+  width:220px;
+  background:#111;
+  height:100vh;
+  padding:20px;
+}
+
+.sidebar h2 {
+  color:#D4AF37;
+  margin-bottom:20px;
+}
+
+.sidebar button {
+  width:100%;
+  padding:12px;
+  margin:6px 0;
+  background:#1a1a1a;
+  border:1px solid #333;
+  color:#f5f5f0;
+  border-radius:8px;
+  text-align:left;
+}
+
+.sidebar button:hover {
+  background:#D4AF37;
+  color:#000;
+}
+
+.main {
+  flex:1;
+  padding:20px;
+}
+
+.header {
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.card {
+  background:#222;
+  border:1px solid #333;
+  border-radius:12px;
+  padding:15px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap:15px;
+}
+
+.item {
+  background:#222;
+  border:1px solid #333;
+  border-radius:12px;
+  padding:15px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.item:hover {
+  border:1px solid #D4AF37;
+}
+
+.cart {
+  margin-top:20px;
+  background:#222;
+  padding:15px;
+  border-radius:12px;
+}
+
+.cart button {
+  width:100%;
+  padding:12px;
+  background:#D4AF37;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.dashboard {
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap:15px;
+}
+
+.kpi {
+  background:#222;
+  padding:20px;
+  border-radius:12px;
+  border:1px solid #333;
+}
+
+.section {
+  margin-top:20px;
+}
+
+.table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+.table th, .table td {
+  border:1px solid #333;
+  padding:10px;
+}

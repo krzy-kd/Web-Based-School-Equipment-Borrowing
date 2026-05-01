@@ -20,7 +20,11 @@ Nav a {
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
-}       
+}    
+
+nav div {
+    font-size: 24px;
+}
 Nav a:hover {
     text-decoration:underline;
 }
@@ -106,7 +110,6 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* Card */
 .history-card {
     background: #fff;
     border-radius: 12px;
@@ -114,7 +117,6 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* Header */
 .history-header {
     display: flex;
     justify-content: space-between;
@@ -130,7 +132,6 @@ button:hover {
     cursor: pointer;
 }
 
-/* Table */
 .history-table {
     width: 100%;
     border-collapse: collapse;
@@ -148,7 +149,6 @@ button:hover {
     border-bottom: 1px solid #eee;
 }
 
-/* Status styles */
 .status {
     padding: 5px 10px;
     border-radius: 6px;
